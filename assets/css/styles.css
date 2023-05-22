@@ -24,6 +24,12 @@ body {
     margin: 0 auto;
 }
 
+.container-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 a {
     text-decoration: none;
 }
@@ -113,4 +119,155 @@ a {
     position: absolute;
     left: 19px;
     bottom: -23px;
+}
+
+/* ==========================Hero=========================== */
+.hero {
+    display: flex;
+    align-items: center;
+    column-gap: 76px;
+    margin-top: 28px;
+}
+
+.hero__heading {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #152427;
+    width: 368px;
+}
+
+.hero__desc {
+    margin-top: 20px;
+    width: 341px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #575D5E;
+}
+
+.hero__row {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+    column-gap: 36px;
+    width: 393px;
+}
+
+.hero-watch {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+    position: relative;
+}
+
+.hero-watch:hover {
+    opacity: 0.5;
+}
+
+.hero-watch__border {
+    position: absolute;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    border: 5px solid var(--primary-color);
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+}
+
+.hero-watch__play {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #83A17D;
+}
+
+.hero-watch__title {
+    width: 118px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    color: #152427;
+}
+
+/* ==========================Hero media=========================== */
+
+.hero__images {
+    position: relative;
+    column-gap: 20px;
+    padding-top: 32px;
+}
+
+.hero__images::before {
+    position: absolute;
+    display: inline-block;
+    content: '';
+    width: 340px;
+    height: 340px;
+    background: #4dbb9a;
+    filter: blur(137px);
+    top: 122px;
+    left: 156px;
+}
+
+
+.flower-01 {
+    position: absolute;
+    left: -172px;
+    top: 0;
+    width: 545px;
+    height: 361.17px;
+    z-index: 2;
+}
+
+.flower-02 {
+    position: absolute;
+    bottom: -149px;
+    left: 62px;
+    width: 545px;
+    height: 364.1px;
+    transform: rotate(183.95deg);
+    z-index: 2;
+}
+
+
+.flower-01__vector,
+.flower-02__vector,
+.flower-01__icon,
+.flower-02__icon {
+    position: absolute;
+}
+
+.flower-02__vector {
+    transform: rotate(175.95deg);
+}
+
+.flower-01__icon {
+    top: 8px;
+    left: -39px;
+    z-index: 2;
+}
+
+.flower-02__icon {
+    transform: rotate(170deg);
+    top: 60px;
+    left: -38px;
+    z-index: 2;
+}
+
+.hero__img {
+    width: 202px;
+    height: 466px;
+    object-fit: cover;
+    border-radius: 110px;
+    z-index: 1;
+}
+
+.hero__img--2 {
+    position: relative;
+    top: 77px;
 }
